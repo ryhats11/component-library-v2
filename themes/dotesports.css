@@ -1,0 +1,372 @@
+/* dotesports.com - Gaming/esports aesthetic for card component */
+/* Brand colors: Red #dd3737, Dark #000, Inter font */
+.casino-comparison-section {
+    margin: 20px 0;
+}
+
+.casino-comparison-section h2 {
+    font-family: 'Inter', Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #111111;
+    margin-bottom: 20px;
+}
+
+.card {
+    position: relative;
+    background: #fff;
+    border: 2px solid #d1d5db;
+    border-radius: 10px;
+    padding: 11px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: all 0.3s ease;
+    min-height: 100px;
+    contain: layout;
+}
+
+.card:hover {
+    box-shadow: 0 6px 20px rgba(221,55,55,0.2);
+    border-color: #dd3737;
+    transform: translateY(-2px);
+}
+
+.card .badge {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: -10px;
+    background: linear-gradient(135deg, #dd3737 0%, #a12828 100%);
+    color: #fff;
+    font-size: 16px;
+    font-weight: 800;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 3px 12px rgba(221,55,55,0.4);
+    font-family: 'Inter', Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+}
+
+.card .category-tag {
+    position: absolute;
+    top: -8px;
+    left: 15px;
+    background: #000;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 4px 10px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-family: 'Inter', sans-serif;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    white-space: nowrap;
+}
+
+.card-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.col.logo-rating {
+    flex: 0 0 180px;
+    text-align: center;
+    min-width: 180px;
+    max-width: 180px;
+}
+
+.logo-wrapper {
+    margin-bottom: 0px;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-wrapper img {
+    max-width: 150px;
+    height: auto;
+}
+
+.logo-wrapper strong {
+    display: inline-block;
+    min-width: 100px;
+    text-align: center;
+}
+
+.rating {
+    font-family: 'Inter', Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    min-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.rating .score {
+    font-size: 15px;
+    font-weight: 700;
+    color: #111;
+    line-height: 1;
+}
+
+.rating .star {
+    color: #dd3737;
+    font-size: 14px;
+    letter-spacing: 1px;
+    line-height: 1;
+}
+
+.col.offer {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.offer-label {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    font-size: 11px;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+    line-height: 1.4;
+    min-height: 15px;
+}
+
+.offer-main {
+    font-family: 'Inter', Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 3px;
+    line-height: 1.3;
+    min-height: 23px;
+}
+
+.offer-category {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+    color: #666;
+    font-style: italic;
+    line-height: 1.4;
+    min-height: 18px;
+}
+
+.col.cta-wrapper {
+    flex: 0 0 180px;
+    min-width: 180px;
+    max-width: 180px;
+    padding-top: 24px;
+}
+
+.cta-links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    min-height: 70px;
+}
+
+.claim-button {
+    /* Actual dotesports button CSS adapted for better contrast */
+    align-items: center;
+    background: #27e287;
+    border: 1px solid #27e287;
+    border-radius: 8px;
+    color: #fff !important;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: center;
+    line-height: normal;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none !important;
+    transition: all .4s ease;
+    width: 100%;
+    min-height: 46px;
+    box-sizing: border-box;
+}
+
+.claim-button:hover {
+    background: #1fb872;
+    border-color: #1fb872;
+    color: #fff !important;
+    transform: translateY(-1px);
+}
+
+.review-link {
+    display: inline-block;
+    color: #dd3737 !important;
+    text-decoration: none;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.review-link:hover {
+    color: #111 !important;
+    border-bottom: 2px solid #dd3737;
+}
+
+/* Tablet Responsiveness */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .casino-comparison-section h2 {
+        font-size: 28px;
+    }
+    
+    .card {
+        padding: 10px 18px;
+    }
+    
+    .col.logo-rating {
+        flex: 0 0 150px;
+        min-width: 150px;
+        max-width: 150px;
+    }
+    
+    .logo-wrapper img {
+        max-width: 120px;
+    }
+    
+    .col.cta-wrapper {
+        flex: 0 0 150px;
+        min-width: 150px;
+        max-width: 150px;
+        padding-top: 20px;
+    }
+    
+    .offer-main {
+        font-size: 16px;
+    }
+    
+    .claim-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .casino-comparison-section {
+        margin: 15px 0;
+    }
+    
+    .casino-comparison-section h2 {
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    
+    .card {
+        padding: 20px 15px 15px 15px;
+        margin-bottom: 15px;
+        min-height: auto;
+    }
+    
+    .card-row {
+        flex-direction: column;
+        gap: 15px;
+        align-items: stretch;
+    }
+    
+    .col.logo-rating,
+    .col.offer,
+    .col.cta-wrapper {
+        flex: 1 1 auto;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    
+    .col.logo-rating {
+        order: 1;
+    }
+    
+    .col.offer {
+        order: 2;
+    }
+    
+    .col.cta-wrapper {
+        order: 3;
+        padding-top: 0;
+    }
+    
+    .card .badge {
+        top: 10px;
+        left: 10px;
+        transform: none;
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+    
+    .card .category-tag {
+        top: 10px;
+        left: auto;
+        right: 10px;
+        font-size: 9px;
+        padding: 3px 8px;
+    }
+    
+    .logo-wrapper {
+        margin-bottom: 8px;
+    }
+    
+    .logo-wrapper img {
+        max-width: 140px;
+    }
+    
+    .rating {
+        margin-top: 0;
+    }
+    
+    .rating .score {
+        font-size: 14px;
+    }
+    
+    .rating .star {
+        font-size: 13px;
+    }
+    
+    .offer-label {
+        font-size: 10px;
+    }
+    
+    .offer-main {
+        font-size: 16px;
+    }
+    
+    .offer-category {
+        font-size: 12px;
+    }
+    
+    .claim-button {
+        padding: 10px 20px;
+        font-size: 14px;
+        min-height: 42px;
+    }
+    
+    .cta-links {
+        min-height: auto;
+    }
+}
+
